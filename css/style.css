@@ -93,23 +93,20 @@ header {
 }
 
 .title-header {
-    /* DEBUG */
-    background-color: aqua;
-    height: 80px;
+    text-align: center;
 }
 
 .content-header {
     display: flex;
-    /* DEBUG */
-    background-color: blue;
-    height: 300px;
+    flex-wrap: wrap;
 }
 
-.content-header > div {
+.content-header > .title-header {
+    width: 100%;
+} 
+
+.content-header > div:not(.title-header) {
     width: 50%;
-    /* DEBUG */
-    background-color: orange;
-    border: 1px solid black;
 }
 
 /* Main */
