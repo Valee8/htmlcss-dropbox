@@ -7,7 +7,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    font-size: 12px;
 }
 
 /* Link */
@@ -23,6 +22,11 @@ img {
 .button {
     color: #fff;
     font-size: 13px;
+}
+
+.navbar .button {
+    background-color: #0061ff; 
+    padding: 4px 10px;
 }
 
 /* Temporaneo */
@@ -105,15 +109,6 @@ header {
     margin-right: 20px;
 }
 
-/* Bottone header */
-.navbar .button {
-    padding: 4px 10px;
-}
-
-.button.header {
-    background-color: #0061ff; 
-}
-
 header .container {
     display: flex;
     flex-wrap: wrap;
@@ -137,8 +132,8 @@ header .container {
 }
 
 .text-header .button {
+    background-color: #0061ff; 
     padding: 8px 10px;
-    color: #fff;
 }
 
 .text-header {
@@ -147,7 +142,11 @@ header .container {
     padding-top: 54px;
 }
 
-.text-header a {
+.text-header .link-header {
+    padding-top: 30px;
+}
+
+.text-header a:not(.button) {
     color: #000;
 }
 
@@ -173,17 +172,25 @@ header .container {
 
 /* Main */
 main {
-    /* DEBUG */
-    padding: 70px 0;
+    padding: 90px 0;
+}
+
+/* Prima sezione */
+.title-section h2 {
+    font-size: 30px;
+}
+
+.payment-section .card-section:last-child {
+    width: 100%;
+}
+
+.payment-section h2 {
+    padding-bottom: 30px;
 }
 
 .payment-section span {
     vertical-align: middle;
     font-size: 10px;
-}
-
-.payment-section h2 {
-    padding-bottom: 30px;
 }
 
 .payment-section .check-button + span + .check-button {
@@ -204,21 +211,12 @@ main {
     border: 4px solid #0061ff; 
 }
 
-.title-section h2 {
-    font-size: 30px;
-}
-
 .content-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    /* DEBUG */
-    height: 300px;
-}
-
-section:not(.sixth-section) {
-    margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 .card-section {
@@ -226,16 +224,114 @@ section:not(.sixth-section) {
     border: 1px solid #e2e2e3;
 }
 
-.name-card {
+.card-section i {
+    padding-right: 3px;
+}
+
+.card-section .content-card {
+    padding: 20px;
+}
+
+.card-section .name-card {
     border-bottom: 1px solid #e2e2e3;
+    text-align: center;
+    font-size: 11px;
+    padding: 6px 0;
 }
 
-.content-section {
+.card-section .list-card {
+    list-style-type: none;
+}
+
+.card-section .info-price {
+    font-weight: bold;
+}
+
+.card-section .info-duration {
+    color: #979291;
+}
+
+.card-section .list-card li {
+    font-size: 11px;
+}
+
+.card-section .list-card:first-of-type li:not(.info-link) {
+    padding-top: 10px;
+}
+
+.card-section .list-card:first-of-type li:nth-of-type(3n+3) {
+    padding-top: 35px;
+}  
+
+.card-section .info-share {
+    min-height: 56px;
+}
+
+.card-section .content-card .button {
+    background-color: #0061ff; 
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    padding: 8px 0;
+}
+
+.card-section .info-link {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 11px;
+}
+
+.card-section .info-link a {
+    color: #0061ff;
+    text-decoration: underline;
+} 
+
+.card-section .sep-card {
+    border-top: 1px solid #e2e2e3;
+    width: 20%;
+}
+
+.card-section .list-card:nth-of-type(2) li i {
+    color: #0061FF;
+}
+
+.card-section .list-card:nth-of-type(2) li {
+    padding-bottom: 15px;
+}
+
+.card-section h6 {
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 
-.payment-section .card-section:last-child {
-    width: 100%;
+
+/* .info-card, .link-card {
+    padding-top: 15px;
+}
+
+.link-card {
+    padding-bottom: 15px;
+}
+
+.link-card-button {
+    padding-top: 35px;
+} 
+
+.link-card a {
+    color: #0061ff;
+    text-decoration: underline;
+} */
+
+
+
+/* DEBUG */
+section:not(.sixth-section) {
+    margin-bottom: 40px;
+}
+/* DEBUG */
+
+.third-section .content-section {
+    background-color: red;
 }
 
 .second-section {
