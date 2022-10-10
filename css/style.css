@@ -74,7 +74,7 @@ header {
 main {
     /* DEBUG */
     background-color: blanchedalmond;
-    padding: 10px;
+    padding: 40px 0;
 }
 
 .container {
@@ -86,6 +86,7 @@ main {
 .title-section {
     /* DEBUG */
     background-color: burlywood;
+    border: 1px solid black;
     height: 50px;
 }
 
@@ -97,13 +98,72 @@ main {
     height: 300px;
 }
 
+section:not(.sixth-section) {
+    margin-bottom: 40px;
+}
+
 .card {
+    width: calc(100% / 3);
     /* DEBUG */
     background-color:cadetblue;
     border: 1px solid black;
+}
+
+.first-section .card:last-child {
     width: 100%;
 }
 
-.card:not(:last-child) {
+.second-section {
+    display: flex;
+    /* DEBUG */
+    height: 300px;
+}
+
+.second-section > div {
+    width: 50%;
+    /* DEBUG */
+    background-color:cadetblue;
+    border: 1px solid black;
+}
+
+.fifth-section {
+    display: flex;
+    flex-wrap: wrap;
+    /* DEBUG */
+}
+
+.fifth-section > div:not(:last-child) {
     width: calc(100% / 3);
+    /* DEBUG */
+    background-color:cadetblue;
+    border: 1px solid black;
+}
+
+.left-section, .right-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(100% / 2);
+    /* DEBUG */
+    background-color: red;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.fifth-section .title-section {
+    width: 100%;
+    height: 100px;
+}
+
+.faq {
+    list-style-type: none;
+}
+
+.sixth-section li {
+    /* DEBUG */
+    background-color: red;
+    border: 1px solid black;
+    height: 70px;
 }
