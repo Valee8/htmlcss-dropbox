@@ -7,6 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #000;
+    font-size: 12px;
 }
 
 /* Link */
@@ -25,7 +26,7 @@ img {
 }
 
 /* Temporaneo */
-main, footer {
+footer {
     display: none;
 }
 
@@ -103,10 +104,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* .content-header > div {
-    align-self: center;
-} */
-
 .content-header > .title-header {
     width: 100%;
 } 
@@ -130,11 +127,27 @@ header {
 
 .content-header .button {
     padding: 8px 10px;
+    color: #fff;
 }
 
 .text-header {
+    position: relative;
     font-size: 12px;
+}
 
+.text-header a {
+    color: #000;
+}
+
+.text-header .cancel-button {
+    font-size: 13px;
+}
+
+.arrow-header {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    font-size: 40px;
 }
 
 .img-header img {
@@ -144,15 +157,38 @@ header {
 /* Main */
 main {
     /* DEBUG */
-    background-color: blanchedalmond;
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
-.title-section {
-    /* DEBUG */
-    background-color: burlywood;
-    border: 1px solid black;
-    height: 50px;
+.payment-section span {
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+.payment-section h2 {
+    padding-bottom: 30px;
+}
+
+.payment-section .check-button + span + .check-button {
+    margin-left: 20px;
+}
+
+.check-button {
+    background: white;
+    border: 1px solid #d9d9dc;
+    padding: 3px 0;
+    height: 15px;
+    width: 15px; 
+    border-radius: 100%; 
+    display: inline-block;
+}
+
+.check-button:active {
+    border: 4px solid #0061ff; 
+}
+
+.title-section h2 {
+    font-size: 30px;
 }
 
 .content-section {
@@ -167,14 +203,14 @@ section:not(.sixth-section) {
     margin-bottom: 40px;
 }
 
-.card {
+.card-section {
     width: calc(100% / 3);
     /* DEBUG */
     background-color:cadetblue;
     border: 1px solid black;
 }
 
-.first-section .card:last-child {
+.payment-section .card-section:last-child {
     width: 100%;
 }
 
