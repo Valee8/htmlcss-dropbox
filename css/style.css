@@ -19,6 +19,11 @@ img {
     max-width: 100%;
 }
 
+.button {
+    color: #fff;
+    font-size: 13px;
+}
+
 /* Temporaneo */
 main, footer {
     display: none;
@@ -26,7 +31,7 @@ main, footer {
 
 /* Container */
 .container {
-    width: 80%;
+    width: 60%;
     max-width: 1300px;
     margin: 0 auto;
 }
@@ -84,16 +89,13 @@ header {
     border-bottom: 2px solid #000;
 }
 
-/* Bottone nav */
-.button.nav {
-    background-color: #0061ff; 
-    color: #fff;
+/* Bottone header */
+.navbar .button {
     padding: 4px 10px;
-    font-size: 13px;
 }
 
-.title-header {
-    text-align: center;
+.button.header {
+    background-color: #0061ff; 
 }
 
 .content-header {
@@ -101,12 +103,42 @@ header {
     flex-wrap: wrap;
 }
 
+/* .content-header > div {
+    align-self: center;
+} */
+
 .content-header > .title-header {
     width: 100%;
 } 
 
-.content-header > div:not(.title-header) {
-    width: 50%;
+.content-header > .text-header {
+    width: 30%;
+}
+
+.content-header > .img-header {
+    width: 70%;
+}
+
+.title-header {
+    font-size: 30px;
+    padding: 50px 0 40px 0;
+}
+
+.text-header a:not(.button) {
+    display: block;
+}
+
+.content-header .button {
+    padding: 8px 10px;
+}
+
+.text-header {
+    font-size: 12px;
+
+}
+
+.img-header img {
+    vertical-align: bottom;
 }
 
 /* Main */
