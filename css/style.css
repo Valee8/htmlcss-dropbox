@@ -83,7 +83,6 @@ header {
 .nav-left, .nav-right {
     display: flex;
     justify-content: space-between;
-    gap: 40px;
     list-style-type: none;
 }
 
@@ -95,7 +94,16 @@ header {
     flex-basis: content;
     align-self: center;
     width: calc(100% / 4);
+    margin-right: 40px;
 } 
+
+.nav-left li:last-child, .nav-right li:last-child {
+    margin-right: 0;
+}
+
+.nav-right li:nth-child(3) {
+    margin-right: 20px;
+}
 
 /* Bottone header */
 .navbar .button {
@@ -204,6 +212,7 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
     /* DEBUG */
     height: 300px;
 }
@@ -213,10 +222,16 @@ section:not(.sixth-section) {
 }
 
 .card-section {
-    width: calc(100% / 3);
-    /* DEBUG */
-    background-color:cadetblue;
-    border: 1px solid black;
+    width: calc(100% / 3 - 20px);
+    border: 1px solid #e2e2e3;
+}
+
+.name-card {
+    border-bottom: 1px solid #e2e2e3;
+}
+
+.content-section {
+    padding-top: 30px;
 }
 
 .payment-section .card-section:last-child {
