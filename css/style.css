@@ -4,12 +4,7 @@
     box-sizing: border-box;
 }
 
-header {
-    /* DEBUG */
-    background-color:blueviolet;
-    padding: 10px;
-}
-
+/* Nav */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -42,7 +37,8 @@ header {
     width: calc(100% / 4);
 } 
 
-.container2 {
+/* Container */
+.container {
     width: 80%;
     max-width: 1300px;
     margin: 0 auto;
@@ -50,7 +46,20 @@ header {
     background-color: red;
 }
 
-header .container2 {
+.container2 {
+    width: 50%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    /* DEBUG */
+    background-color:blueviolet;
+    padding: 10px;
+}
+
+header .container {
     padding: 10px;
 }
 
@@ -74,16 +83,11 @@ header .container2 {
     border: 1px solid black;
 }
 
+/* Main */
 main {
     /* DEBUG */
     background-color: blanchedalmond;
     padding: 40px 0;
-}
-
-.container {
-    width: 50%;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .title-section {
@@ -171,6 +175,7 @@ section:not(.sixth-section) {
     height: 70px;
 }
 
+/* Footer */
 footer {
     /* DEBUG */
     background-color: red;
