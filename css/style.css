@@ -65,7 +65,7 @@ header {
     box-shadow: 0 0 2px #000;
 }
 
-.navbar a:not(.button) {
+.nav-left a:not(.logo), .nav-right a:not(.button) {
     display: flex;
     align-items: center;
     color: #000;
