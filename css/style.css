@@ -65,13 +65,18 @@ header {
     box-shadow: 0 0 2px #000;
 }
 
-.nav-left a:not(.logo), .nav-right a:not(.button) {
+.nav-left li:not(:first-child) a, .nav-right li:not(:last-child) a {
     display: flex;
     align-items: center;
     color: #000;
     font-size: 13px;
     height: 70px;
     padding-bottom: 2px;
+}
+
+.nav-left li:not(:first-child) a:hover, .nav-right li:not(:last-child) a:hover {
+    padding-bottom: 0;
+    border-bottom: 2px solid #000;
 }
 
 /* Menu nav */
@@ -92,11 +97,6 @@ header {
     width: calc(100% / 4);
 } 
 
-.nav-left li:not(:first-child) a:hover, .nav-right li:not(:last-child) a:hover {
-    padding-bottom: 0;
-    border-bottom: 2px solid #000;
-}
-
 /* Bottone header */
 .navbar .button {
     padding: 4px 10px;
@@ -106,33 +106,29 @@ header {
     background-color: #0061ff; 
 }
 
-.content-header {
+header .container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
 
-.content-header > .title-header {
+.container > .title-header {
     width: 100%;
 } 
 
-.content-header > .text-header {
+.container > .text-header {
     width: 30%;
 }
 
-.content-header > .img-header {
+.container > .img-header {
     width: 70%;
 }
 
 .title-header {
     font-size: 30px;
-    padding: 50px 0 40px 0;
 }
 
-.text-header a:not(.button) {
-    display: block;
-}
-
-.content-header .button {
+.text-header .button {
     padding: 8px 10px;
     color: #fff;
 }
@@ -140,6 +136,7 @@ header {
 .text-header {
     position: relative;
     font-size: 12px;
+    padding-top: 54px;
 }
 
 .text-header a {
@@ -160,6 +157,11 @@ header {
 .img-header img {
     vertical-align: bottom;
 }
+
+.img-header {
+    position: relative;
+    top: 55px;
+} 
 
 /* Main */
 main {
