@@ -278,13 +278,13 @@ main {
     padding: 8px 0;
 }
 
-.card-section .info-link {
+.payment-section .info-link {
     padding-top: 20px;
     padding-bottom: 30px;
     font-size: 11px;
 }
 
-.card-section .info-link a {
+.info-link a {
     color: #0061ff;
     text-decoration: underline;
 } 
@@ -361,6 +361,18 @@ section:not(.content-section) {
 
 .business-section .card-section {
     padding-bottom: 15px;
+}
+
+.client-section {
+    width: 60%;
+}
+
+.client-section .info-link {
+    padding-top: 40px;
+}
+
+.client-section a {
+    font-size: 12px;
 }
 
 
