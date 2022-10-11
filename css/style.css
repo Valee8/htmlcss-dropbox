@@ -278,6 +278,10 @@ main {
     padding-top: 30px;
 }
 
+.card-section .info-description {
+    padding-top: 40px;
+}
+
 .card-section .info-bold {
     font-weight: bold;
 }
