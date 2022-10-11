@@ -75,7 +75,7 @@ header {
     box-shadow: 0 0 2px #000;
 }
 
-.nav-left li:not(:first-child) a, .nav-right li:not(:last-child) a {
+.nav-left > li:not(:first-child) a, .nav-right > li:not(:last-child) a {
     display: flex;
     align-items: center;
     color: #000;
@@ -84,13 +84,22 @@ header {
     padding-bottom: 2px;
 }
 
-.nav-left li:not(:first-child) a:hover, .nav-right li:not(:last-child) a:hover {
+.nav-right .menu-support {
+    position: relative;
+}
+
+.nav-left > li:not(:first-child) a:hover, .nav-right > li:not(:last-child) > a:hover {
+    padding-bottom: 0;
+    border-bottom: 2px solid #0061ff;
+}
+
+.nav-right > .menu-support:hover > a {
     padding-bottom: 0;
     border-bottom: 2px solid #0061ff;
 }
 
 /* Menu nav */
-.nav-left, .nav-right {
+.navbar > .nav-left, .navbar > .nav-right {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
@@ -101,23 +110,52 @@ header {
     vertical-align: middle;
 }
 
-.navbar li {
+.nav-left > li, .nav-right > li {
     flex-basis: content;
     align-self: center;
     width: calc(100% / 4);
     margin-right: 40px;
 } 
 
-.nav-left li:last-child, .nav-right li:last-child {
+.nav-left > li:last-child, .nav-right > li:last-child {
     margin-right: 0;
 }
 
-.nav-right li:nth-child(3) {
+.nav-right > li:nth-child(3) {
     margin-right: 20px;
 }
 
 .navbar .button {
     padding: 4px 10px;
+}
+
+/* Bonus */
+.nav-submenu {
+    list-style-type: none;
+    display: none; 
+    position: absolute;
+    top: 70px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #e2e2e3;
+    min-width: 100px;
+}
+
+.nav-right .menu-support:hover .nav-submenu {
+    display: block;
+} 
+
+.nav-submenu li:not(:last-child) {
+    border-bottom: 1px solid #e2e2e3; 
+}
+
+.nav-submenu li a {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-submenu li:hover a {
+    background-color: rgba(0, 0, 0, .1);
 }
 
 /* Parte header centrale */
@@ -514,6 +552,9 @@ main {
 }
 
 .list-faq li a {
+}
+
+.list-faq li a {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -523,13 +564,34 @@ main {
     padding: 30px 0;
 }
 
-.list-faq li:last-child {
+.list-faq li:not(:hover):last-child a {
     border-bottom: 1px solid #bebebe;
 }
 
 .list-faq li i {
     font-size: 10px;
     padding-right: 30px;
+}
+
+/* Bonus */
+.list-faq-hover {
+    display: none; 
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.list-faq li:hover .list-faq-hover {
+    display: block;
+}
+
+.list-faq-hover li {
+    font-size: 11px;
+    border: 0;
+    padding-bottom: 15px;
+}
+
+.list-faq li:last-child .list-faq-hover {
+    border-bottom: 1px solid #bebebe;
 }
 
 /* Footer */
