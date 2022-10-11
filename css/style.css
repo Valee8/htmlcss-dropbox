@@ -321,6 +321,35 @@ main {
     width: 25%;
 }
 
+.partner-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.partner-section .img-section {
+    width: 60%;
+}
+
+.partner-section .text-section {
+    width: 35%;
+    padding-right: 15px;
+    padding-top: 40px;
+}
+
+.partner-section p {
+    font-size: 12px;
+    padding: 15px 0 25px 0;
+}
+
+.partner-section .button {
+    border: 1px solid #000;
+    color: #000;
+    padding: 8px;
+}
+
+section:not(.content-section) {
+    padding: 35px 0;
+}
 
 
 
@@ -332,12 +361,6 @@ section:not(.sixth-section) {
 
 .third-section .content-section {
     background-color: red;
-}
-
-.second-section {
-    display: flex;
-    /* DEBUG */
-    height: 300px;
 }
 
 .second-section > div {
