@@ -175,6 +175,14 @@ main {
     padding: 90px 0;
 }
 
+.partner-section, .business-section, .client-section {
+    padding: 35px 0;
+}  
+
+.brand-section {
+    padding-top: 35px;
+}
+
 /* Prima sezione */
 .title-section h2 {
     font-size: 30px;
@@ -198,7 +206,7 @@ main {
 }
 
 .check-button {
-    background: white;
+    background: #fff;
     border: 1px solid #d9d9dc;
     padding: 3px 0;
     height: 15px;
@@ -289,8 +297,11 @@ main {
     text-decoration: underline;
 } 
 
-.card-section .sep-card {
+.sep {
     border-top: 1px solid #e2e2e3;
+}
+
+.card-section .sep {
     width: 20%;
 }
 
@@ -350,10 +361,6 @@ main {
     padding: 8px;
 }
 
-section:not(.content-section) {
-    padding: 35px 0;
-}
-
 .business-section p {
     font-size: 12px;
     padding-top: 20px;
@@ -375,22 +382,14 @@ section:not(.content-section) {
     font-size: 12px;
 }
 
-
-/* DEBUG */
-section:not(.sixth-section) {
-    margin-bottom: 40px;
-}
-/* DEBUG */
-
-
 .brand-section {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.brand-section > div:not(:last-child) {
+.brand-section > div {
     width: calc(100% / 3);
 }
+
 
 .left-section, .right-section {
     display: flex;
@@ -402,12 +401,24 @@ section:not(.sixth-section) {
     justify-content: center;
     padding: 40px;
     width: calc(100% / 2);
-    height: calc(100% / 2);
+    height: 250px;
 }
+
+.square img {
+    filter: invert(100%);
+}
+
+.square.florida img {
+    transform: scale(.7, .15);
+}
+
+.square:not(.florida) img {
+    transform: scale(.8);
+} 
 
 .square.designit {
     background-color: #a2d39b;
-    border: 10px solid #d1e9cd;
+    border: 11px solid #d1e9cd;
 }
 
 .square.arizona {
@@ -422,9 +433,64 @@ section:not(.sixth-section) {
     background-color: #ff1c1c;
 }
 
+.square.wbr {
+    background-color: #d5001f;
+}
+
+.square.hearst {
+    background-color: #b4d0e7;
+}
+
+.square.lonely-planet {
+    background-color: #0d2481;
+}
+
+.square.clear-channel {
+    background-color: #ffd830;
+}
+
 .brand-section .title-section {
     width: 100%;
     height: 100px;
+}
+
+.center-section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    font-size: 12px;
+    overflow: hidden;
+    height: 500px;
+}
+
+.center-section img {
+    width: 200px;
+    padding-bottom: 30px;
+}
+
+.center-section p {
+    padding-top: 30px;
+}
+
+.center-section .sep {
+    width: 18%;
+}
+
+.overflow-section {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.title-button-section {
+    background-color: #b4d0e7;
+    padding: 80px 0;
+}
+
+.title-button-section .title-section {
+    width: 50%;
+}
+
+.title-button-section h2 {
+    color: #61082b;
 }
 
 .faq {
