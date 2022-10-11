@@ -88,7 +88,7 @@ header {
     position: relative;
 }
 
-.nav-left > li:not(:first-child) a:hover, .nav-right > li:not(:last-child) > a:hover {
+.nav-left > li:not(:first-child) > a:hover, .nav-right > li:not(:last-child) > a:hover {
     padding-bottom: 0;
     border-bottom: 2px solid #0061ff;
 }
