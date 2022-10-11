@@ -84,9 +84,9 @@ header {
     padding-bottom: 2px;
 }
 
-.nav-left li:not(:first-child) a:hover, .nav-right li:not(:last-child) a:hover {
+.nav-left li:not(:first-child) a:hover, .nav-right li:nth-child(2) a:hover, .nav-right li:nth-child(3) a:hover {
     padding-bottom: 0;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #0061ff;
 }
 
 /* Menu nav */
@@ -182,7 +182,7 @@ header .container {
 
 /* Main */
 main {
-    padding-top: 120px;
+    padding-top: 70px;
 }
 
 /* Padding sezioni */
@@ -410,8 +410,7 @@ main {
     display: flex;
     justify-content: center;
     padding: 40px;
-    width: calc(100% / 2);
-    height: 200px;
+    width: calc(100% / 2); 
 }
 
 .square img {
