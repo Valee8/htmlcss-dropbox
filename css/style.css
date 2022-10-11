@@ -266,23 +266,6 @@ main {
     padding: 6px 0;
 }
 
-.content-card div {
-    padding-top: 10px;
-    font-size: 11px;
-}
-
-.content-card .info-user {
-    padding-top: 30px;
-}
-
-.content-card .info-button {
-    padding-top: 30px;
-}
-
-.card-section .info-description {
-    padding-top: 40px;
-}
-
 .card-section .info-bold {
     font-weight: bold;
 }
@@ -316,19 +299,41 @@ main {
 }
 
 .card-section h6 {
-    padding: 20px 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .card-section .list-card {
     list-style-type: none;
 }
 
-.card-section .list-card li {
-    padding-bottom: 15px;
+.card-section .list-card li span, .card-section .list-card li {
     font-size: 11px;
 } 
 
-.card-section .list-card li i {
+.card-section .list-card:first-of-type li:not(.info-link) {
+    padding-top: 10px;
+}
+
+.card-section .list-card:first-of-type li:nth-of-type(3n+3) {
+    padding-top: 35px;
+}  
+
+.card-section .info-share {
+    min-height: 56px;
+} 
+
+.payment-section .info-link {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 11px;
+}
+
+.card-section .list-card:nth-of-type(2) li {
+    padding-bottom: 15px;
+}
+
+.card-section .list-card:nth-of-type(2) li i {
     color: #0061FF;
 }
 
