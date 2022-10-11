@@ -36,6 +36,10 @@ img {
     color: #fff;
 }
 
+.button:hover {
+    opacity: 0.8;
+}
+
 /* Container */
 .container {
     width: 60%;
@@ -134,8 +138,8 @@ header .container {
     width: 70%;
 }
 
-.title-header {
-    font-size: 30px;
+.title-header h1 {
+    font-size: 50px;
 }
 
 .text-header .button {
@@ -178,7 +182,7 @@ header .container {
 
 /* Main */
 main {
-    padding-top: 90px;
+    padding: 120px 0 60px 0;
 }
 
 /* Padding sezioni */
@@ -409,7 +413,7 @@ main {
     justify-content: center;
     padding: 40px;
     width: calc(100% / 2);
-    height: 250px;
+    height: 200px;
 }
 
 .square img {
@@ -467,7 +471,7 @@ main {
     padding: 30px;
     font-size: 12px;
     overflow: hidden;
-    height: 500px;
+    height: 400px;
 }
 
 .center-section img {
@@ -510,7 +514,7 @@ main {
 
 .title-button-section .button {
     border: 0;
-    padding: 8px 40px;
+    padding: 8px 35px;
 }
 
 /* Sezione domande frequenti */
