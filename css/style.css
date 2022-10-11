@@ -215,13 +215,16 @@ main {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
     padding-top: 30px;
 }
 
-.card-section {
-    width: calc(100% / 3 - 20px);
+.payment-section .card-section {
     border: 1px solid #e2e2e3;
+}
+
+.card-section {
+    width: calc(100% / 3 - 25px);
 }
 
 .card-section i {
@@ -229,7 +232,7 @@ main {
 }
 
 .card-section .content-card {
-    padding: 20px;
+    padding: 30px;
 }
 
 .card-section .name-card {
@@ -351,6 +354,14 @@ section:not(.content-section) {
     padding: 35px 0;
 }
 
+.business-section p {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.business-section .card-section {
+    padding-bottom: 15px;
+}
 
 
 /* DEBUG */
@@ -359,16 +370,6 @@ section:not(.sixth-section) {
 }
 /* DEBUG */
 
-.third-section .content-section {
-    background-color: red;
-}
-
-.second-section > div {
-    width: 50%;
-    /* DEBUG */
-    background-color:cadetblue;
-    border: 1px solid black;
-}
 
 .fifth-section {
     display: flex;
