@@ -176,15 +176,19 @@ header .container {
 
 /* Main */
 main {
-    padding: 90px 0;
+    padding-top: 90px;
 }
 
-.partner-section, .business-section, .client-section, .faq-section {
+.partner-section, .business-section, .client-section {
     padding: 35px 0;
 }  
 
 .brand-section {
     padding-top: 35px;
+}
+
+.faq-section {
+    padding: 80px 0;
 }
 
 /* Prima sezione */
@@ -502,10 +506,29 @@ main {
     padding: 8px 40px;
 }
 
+
 .list-faq {
     list-style-type: none;
+    padding-top: 40px;
 }
 
+.list-faq li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #bebebe;
+    padding: 30px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.list-faq li:last-child {
+    border-bottom: 1px solid #bebebe;
+}
+
+.list-faq li i {
+    font-size: 10px;
+    padding-right: 30px;
+}
 
 
 
