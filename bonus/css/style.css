@@ -551,10 +551,10 @@ main {
     padding-top: 40px;
 }
 
-.list-faq li a {
+.list-faq > li a {
 }
 
-.list-faq li a {
+.list-faq > li a {
     display: flex;
     justify-content: space-between;
     font-size: 12px;
@@ -564,7 +564,7 @@ main {
     padding: 30px 0;
 }
 
-.list-faq li:not(:hover):last-child a {
+.list-faq > li:not(:hover):last-child a {
     border-bottom: 1px solid #bebebe;
 }
 
@@ -586,12 +586,19 @@ main {
 
 .list-faq-hover li {
     font-size: 11px;
-    border: 0;
     padding-bottom: 15px;
 }
 
 .list-faq li:last-child .list-faq-hover {
     border-bottom: 1px solid #bebebe;
+}
+
+.list-faq li .icon-faq-hover, .list-faq li:hover .icon-faq {
+    display: none;
+}
+
+.list-faq li:hover .icon-faq-hover {
+    display: block;
 }
 
 /* Footer */
