@@ -383,17 +383,13 @@ section:not(.sixth-section) {
 /* DEBUG */
 
 
-.fifth-section {
+.brand-section {
     display: flex;
     flex-wrap: wrap;
-    /* DEBUG */
 }
 
-.fifth-section > div:not(:last-child) {
+.brand-section > div:not(:last-child) {
     width: calc(100% / 3);
-    /* DEBUG */
-    background-color:cadetblue;
-    border: 1px solid black;
 }
 
 .left-section, .right-section {
@@ -402,14 +398,31 @@ section:not(.sixth-section) {
 }
 
 .square {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
     width: calc(100% / 2);
-    /* DEBUG */
-    background-color: red;
-    border: 1px solid black;
-    height: 100px;
+    height: calc(100% / 2);
 }
 
-.fifth-section .title-section {
+.square.designit {
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
+}
+
+.square.arizona {
+    background-color: #61082b;
+}
+
+.square.florida {
+    background-color: #0093ce;
+}
+
+.square.topps {
+    background-color: #ff1c1c;
+}
+
+.brand-section .title-section {
     width: 100%;
     height: 100px;
 }
