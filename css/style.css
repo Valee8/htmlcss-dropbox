@@ -96,7 +96,8 @@ header {
     list-style-type: none;
 }
 
-.nav-left li img {
+.logo {
+    transform: scale(.8);
     vertical-align: middle;
 }
 
@@ -411,6 +412,7 @@ main {
     justify-content: center;
     padding: 40px;
     width: calc(100% / 2); 
+    min-height: 240px;
 }
 
 .square img {
@@ -468,7 +470,7 @@ main {
     padding: 30px;
     font-size: 12px;
     overflow: hidden;
-    height: 400px;
+    height: 480px;
 }
 
 .center-section img {
@@ -521,12 +523,16 @@ main {
 }
 
 .list-faq li {
-    display: flex;
-    justify-content: space-between;
     border-top: 1px solid #bebebe;
     padding: 30px 0;
+}
+
+.list-faq li a {
+    display: flex;
+    justify-content: space-between;
     font-size: 12px;
     font-weight: bold;
+    color: #000;
 }
 
 .list-faq li:last-child {
