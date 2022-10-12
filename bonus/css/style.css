@@ -84,16 +84,7 @@ header {
     padding-bottom: 2px;
 }
 
-.nav-right .menu-support {
-    position: relative;
-}
-
-.nav-left > li:not(:first-child) > a:hover, .nav-right > li:not(:last-child) > a:hover {
-    padding-bottom: 0;
-    border-bottom: 2px solid #0061ff;
-}
-
-.nav-right > .menu-support:hover > a {
+.nav-left > li:not(:first-child):hover > a, .nav-right > li:not(:last-child):hover > a {
     padding-bottom: 0;
     border-bottom: 2px solid #0061ff;
 }
@@ -141,9 +132,13 @@ header {
     min-width: 100px;
 }
 
-.nav-right .menu-support:hover .nav-submenu {
+.nav-left > li:hover .nav-submenu, .nav-right > li:hover .nav-submenu {
     display: block;
 } 
+
+.nav-submenu li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
 
 .nav-submenu li:not(:last-child) {
     border-bottom: 1px solid #e2e2e3; 
@@ -221,7 +216,7 @@ header .container {
 
 /* Main */
 main {
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 /* Padding sezioni */
@@ -240,10 +235,12 @@ main {
 /* Sezione pagamenti */
 .title-section h2 {
     font-size: 30px;
+    padding-top: 8px;
 }
 
 .payment-section .card-section:last-child {
     width: 100%;
+    margin-top: 9px;
 }
 
 .payment-section h2 {
@@ -314,6 +311,10 @@ main {
     text-decoration: underline;
 } 
 
+.info-link a:hover {
+    text-decoration: none;
+}
+
 .sep {
     border-top: 1px solid #e2e2e3;
 }
@@ -344,8 +345,13 @@ main {
 }  
 
 .card-section .info-share {
-    min-height: 56px;
-} 
+    display: flex;
+}
+
+.card-section .info-share i {
+    height: 100%; 
+    padding: 3px 6px 0 0;
+}
 
 .payment-section .info-link {
     padding-top: 20px;
@@ -439,26 +445,36 @@ main {
 .square {
     display: flex;
     justify-content: center;
-    padding: 40px;
     width: calc(100% / 2); 
     min-height: 240px;
 }
 
+.square-bordi {
+    display: flex;
+    background-color: #a2d39b;
+    height: 100%;
+}
+
+.square.designit {
+    background-color: #d1e9cd;
+    padding: 12px;
+}
+
+.square:not(.designit) {
+    padding: 40px;
+}
+
 .square img {
     filter: invert(100%);
+    transform: scale(.8);
+}
+
+.square.designit img {
+    transform: scale(.5);
 }
 
 .square.florida img {
     transform: scale(.7, .15);
-}
-
-.square:not(.florida) img {
-    transform: scale(.8);
-} 
-
-.square.designit {
-    background-color: #a2d39b;
-    border: 11px solid #d1e9cd;
 }
 
 .square.arizona {
@@ -487,11 +503,6 @@ main {
 
 .square.clear-channel {
     background-color: #ffd830;
-}
-
-.brand-section .title-section {
-    width: 100%;
-    height: 100px;
 }
 
 .center-section {
@@ -549,9 +560,6 @@ main {
 .list-faq {
     list-style-type: none;
     padding-top: 40px;
-}
-
-.list-faq > li a {
 }
 
 .list-faq > li a {
@@ -619,6 +627,10 @@ footer a {
     padding-bottom: 100px;
 }
 
+.top-footer a:hover {
+    text-decoration: underline;
+}
+
 .top-footer h3 {
     padding-bottom: 20px;
 }
@@ -653,10 +665,6 @@ footer a {
 
 .language-footer a {
     color: #a3a3a3;
-}
-
-.top-footer a:hover {
-    text-decoration: underline;
 }
 
 .language-footer i {
